@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mugil Tamarind | Manufacturer & Exporter of Tamarind Products</title>
+  <meta name="description" content="Mugil Tamarind (முகில் புளி) - Manufacturer of seedless tamarind cake, round tamarind, bulk PP bags, and export tamarind seeds. Dharmapuri, Tamil Nadu.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            tamarind: {
+              brown: '#4a2211',
+              dark: '#331508',
+              amber: '#c4681f',
+              light: '#fbf8f5',
+              surface: '#f5efe8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-stone-900 antialiased font-sans">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white border-b border-stone-200 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-3">
+          <img src="assets/logo_tight.jpg" alt="Mugil Tamarind Logo" class="h-12 w-auto object-contain">
+          <div>
+            <div class="text-lg font-extrabold text-[#4a2211] leading-none">MUGIL TAMARIND</div>
+            <div class="text-xs text-stone-500 font-medium tracking-wide">முகில் புளி • Dharmapuri</div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-stone-700">
+          <a href="#products" class="hover:text-[#c4681f] transition">Products</a>
+          <a href="#process" class="hover:text-[#c4681f] transition">Process</a>
+          <a href="#highlights" class="hover:text-[#c4681f] transition">Why Us</a>
+          <a href="#contact" class="hover:text-[#c4681f] transition">Contact</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <a href="tel:+919442177026" class="text-xs font-semibold text-stone-700 hover:text-[#c4681f] flex items-center gap-1.5 px-3 py-2">
+            <svg class="w-4 h-4 text-[#c4681f]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+            <span>+91 94421 77026</span>
+          </a>
+          <a href="https://wa.me/919442177026?text=Hi%20Mugil%20Tamarind%2C%20I%20am%20interested%20in%20your%20tamarind%20products." 
+             target="_blank" 
+             class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-sm transition flex items-center space-x-1.5">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.77.818 2.796.818 3.182 0 5.768-2.587 5.768-5.766.001-3.181-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.745 0-3.38-.45-4.81-1.238l-5.19 1.362 1.387-5.067c-.89-1.503-1.387-3.238-1.387-5.057 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/></svg>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Mobile Trigger -->
+        <button id="mobile-menu-btn" class="md:hidden text-stone-700 p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50 bg-white p-6 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-stone-200">
+          <img src="assets/logo_tight.jpg" alt="Logo" class="h-10 w-auto">
+          <button id="mobile-close-btn" class="text-stone-700 p-2">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <div class="flex flex-col space-y-4 mt-6 text-base font-medium text-stone-800">
+          <a href="#products" class="mobile-link py-2 border-b border-stone-100">Products</a>
+          <a href="#process" class="mobile-link py-2 border-b border-stone-100">Process</a>
+          <a href="#highlights" class="mobile-link py-2 border-b border-stone-100">Why Choose Us</a>
+          <a href="#contact" class="mobile-link py-2">Contact Details</a>
+        </div>
+      </div>
+      <div class="space-y-3 pt-6 border-t border-stone-200">
+        <a href="https://wa.me/919442177026" class="w-full py-3 rounded-lg bg-emerald-600 text-white font-bold text-center block text-sm">
+          WhatsApp Inquiry (+91 94421 77026)
+        </a>
+        <a href="tel:+919442177026" class="w-full py-3 rounded-lg bg-stone-100 text-stone-800 font-semibold text-center block text-sm">
+          Call +91 94421 77026
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. Hero Banner with Background Image -->
+  <section class="relative bg-cover bg-center py-20 md:py-28 text-white" style="background-image: url('assets/hero_tamarind.jpg');">
+    <div class="absolute inset-0 banner-overlay"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 text-center space-y-6">
+      
+      <!-- Top Badge -->
+      <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold text-amber-200">
+        <span>🏭 Processing Unit: Dharmapuri, Tamil Nadu</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight text-white max-w-3xl mx-auto">
+        MUGIL TAMARIND
+        <span class="block text-xl sm:text-2xl md:text-3xl font-semibold text-amber-300 mt-1">
+          முகில் புளி • Manufacturer & Exporter
+        </span>
+      </h1>
+
+      <p class="text-sm sm:text-base text-stone-200 max-w-2xl mx-auto leading-relaxed font-normal">
+        All dried tamarind sourced from <strong>Maharashtra</strong> lines, value-added and processed in <strong>Dharmapuri</strong>. Ensuring best quality and continuous supply from <strong>1 kg to Metric Tons</strong>.
+      </p>
+
+      <!-- Key Quick Points -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto pt-2 text-xs">
+        <div class="bg-black/40 backdrop-blur-sm border border-white/15 p-3 rounded-xl">
+          <div class="font-bold text-amber-300 text-sm">1 kg to Metric Tons</div>
+          <div class="text-stone-300 text-[11px] mt-0.5">Flexible Supply Ability</div>
+        </div>
+        <div class="bg-black/40 backdrop-blur-sm border border-white/15 p-3 rounded-xl">
+          <div class="font-bold text-amber-300 text-sm">Maharashtra Line</div>
+          <div class="text-stone-300 text-[11px] mt-0.5">Premium Dried Sourcing</div>
+        </div>
+        <div class="bg-black/40 backdrop-blur-sm border border-white/15 p-3 rounded-xl">
+          <div class="font-bold text-amber-300 text-sm">Retail & Wholesale</div>
+          <div class="text-stone-300 text-[11px] mt-0.5">Bars, Balls & Bulk PP</div>
+        </div>
+        <div class="bg-black/40 backdrop-blur-sm border border-white/15 p-3 rounded-xl">
+          <div class="font-bold text-amber-300 text-sm">TSP Seeds Export</div>
+          <div class="text-stone-300 text-[11px] mt-0.5">Pharma & Paper Grade</div>
+        </div>
+      </div>
+
+      <!-- Banner Actions -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-3">
+        <a href="#products" class="w-full sm:w-auto px-7 py-3 rounded-xl bg-[#c4681f] hover:bg-[#b45a15] text-white font-bold text-xs uppercase tracking-wider shadow-lg transition">
+          View Products Catalog
+        </a>
+        <a href="https://wa.me/919442177026?text=Hi%20Elavarasan%2C%20please%20send%20pricing%20and%20catalogue%20details." 
+           target="_blank" 
+           class="w-full sm:w-auto px-7 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider shadow-lg transition flex items-center justify-center gap-2">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.77.818 2.796.818 3.182 0 5.768-2.587 5.768-5.766.001-3.181-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.745 0-3.38-.45-4.81-1.238l-5.19 1.362 1.387-5.067c-.89-1.503-1.387-3.238-1.387-5.057 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/></svg>
+          <span>WhatsApp for Prices</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 2. Products Section (Directly after Banner) -->
+  <section id="products" class="py-16 md:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#c4681f]">Official Catalog</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#4a2211]">TAMARIND PRODUCTS</h2>
+        <p class="text-stone-600 text-xs sm:text-sm">We ensure best quality & manufacturing for all kinds of tamarind products.</p>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Product 1: Seedless Tamarind Cake -->
+        <div class="product-card bg-white rounded-xl border border-stone-200 overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden bg-stone-100 relative">
+              <img src="assets/prod_tamarind_cake.jpg" alt="Seedless Tamarind Cake" class="w-full h-full object-cover">
+              <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-[#4a2211] text-white text-[11px] font-semibold">
+                Retail / Wholesale
+              </div>
+            </div>
+            <div class="p-5 space-y-3">
+              <div>
+                <h3 class="text-lg font-bold text-stone-900">SEEDLESS TAMARIND CAKE</h3>
+                <p class="text-xs text-stone-500 font-medium">Tamarind cake Clean Seedless</p>
+              </div>
+
+              <!-- Available Sizes Badge -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-2.5">
+                <span class="text-[11px] text-stone-500 block uppercase font-bold">Pack Sizes Available:</span>
+                <span class="text-sm font-bold text-[#c4681f]">250gm / 500gm / 1kg</span>
+              </div>
+
+              <!-- Bullet Points -->
+              <ul class="text-xs text-stone-600 space-y-1.5 pt-1">
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Clean, fiber-free & seedless compressed slab
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Hygienic vacuum & moisture-barrier packing
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Suitable for retail stores & grocery brands
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-5 pt-0">
+            <button onclick="orderProductWhatsApp('Seedless Tamarind Cake', '250g / 500g / 1kg')" 
+                    class="w-full py-2.5 rounded-lg bg-[#4a2211] hover:bg-[#331508] text-white text-xs font-bold transition flex items-center justify-center gap-2">
+              <svg class="w-3.5 h-3.5 fill-current text-amber-400" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.77.818 2.796.818 3.182 0 5.768-2.587 5.768-5.766.001-3.181-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.745 0-3.38-.45-4.81-1.238l-5.19 1.362 1.387-5.067c-.89-1.503-1.387-3.238-1.387-5.057 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/></svg>
+              <span>Inquire Price on WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2: Seedless Round Tamarind -->
+        <div class="product-card bg-white rounded-xl border border-stone-200 overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden bg-stone-100 relative">
+              <img src="assets/prod_round_tamarind.jpg" alt="Seedless Round Tamarind" class="w-full h-full object-cover">
+              <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-[#c4681f] text-white text-[11px] font-semibold">
+                Retail / Wholesale
+              </div>
+            </div>
+            <div class="p-5 space-y-3">
+              <div>
+                <h3 class="text-lg font-bold text-stone-900">SEEDLESS ROUND TAMARIND</h3>
+                <p class="text-xs text-stone-500 font-medium">Clean Round Premium Tamarind</p>
+              </div>
+
+              <!-- Available Sizes Badge -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-2.5">
+                <span class="text-[11px] text-stone-500 block uppercase font-bold">Standard Size:</span>
+                <span class="text-sm font-bold text-[#c4681f]">1 Dosai Puli, 750 – 800gm</span>
+              </div>
+
+              <!-- Bullet Points -->
+              <ul class="text-xs text-stone-600 space-y-1.5 pt-1">
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Traditional circular disc / round shape
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Pure seedless pulp with natural sourness
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Heavily preferred for hotels & catering wholesale
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-5 pt-0">
+            <button onclick="orderProductWhatsApp('Seedless Round Tamarind', '1 Dosai Puli, 750-800gm')" 
+                    class="w-full py-2.5 rounded-lg bg-[#4a2211] hover:bg-[#331508] text-white text-xs font-bold transition flex items-center justify-center gap-2">
+              <svg class="w-3.5 h-3.5 fill-current text-amber-400" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.77.818 2.796.818 3.182 0 5.768-2.587 5.768-5.766.001-3.181-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.745 0-3.38-.45-4.81-1.238l-5.19 1.362 1.387-5.067c-.89-1.503-1.387-3.238-1.387-5.057 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/></svg>
+              <span>Inquire Price on WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3: Seedless Tamarind Bulk PP Bag -->
+        <div class="product-card bg-white rounded-xl border border-stone-200 overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden bg-stone-100 relative">
+              <img src="assets/prod_seedless_raw.jpg" alt="Seedless Tamarind Bulk PP Bag" class="w-full h-full object-cover">
+              <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-amber-700 text-white text-[11px] font-semibold">
+                Wholesale Only
+              </div>
+            </div>
+            <div class="p-5 space-y-3">
+              <div>
+                <h3 class="text-lg font-bold text-stone-900">SEEDLESS TAMARIND (PP BAG)</h3>
+                <p class="text-xs text-stone-500 font-medium">Removed Fiber, Seed, Raw Tamarind</p>
+              </div>
+
+              <!-- Available Sizes Badge -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-2.5">
+                <span class="text-[11px] text-stone-500 block uppercase font-bold">Packaging:</span>
+                <span class="text-sm font-bold text-[#c4681f]">25kg & 50kg PP Woven Bags</span>
+              </div>
+
+              <!-- Bullet Points -->
+              <ul class="text-xs text-stone-600 space-y-1.5 pt-1">
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Cleaned de-seeded bulk commercial supply
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Ideal for pickles, masalas & sauce units
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  High capacity continuous monthly orders
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-5 pt-0">
+            <button onclick="orderProductWhatsApp('Seedless Tamarind PP Bag (Wholesale)', '25kg / 50kg PP Bags')" 
+                    class="w-full py-2.5 rounded-lg bg-[#4a2211] hover:bg-[#331508] text-white text-xs font-bold transition flex items-center justify-center gap-2">
+              <svg class="w-3.5 h-3.5 fill-current text-amber-400" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.77.818 2.796.818 3.182 0 5.768-2.587 5.768-5.766.001-3.181-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.745 0-3.38-.45-4.81-1.238l-5.19 1.362 1.387-5.067c-.89-1.503-1.387-3.238-1.387-5.057 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/></svg>
+              <span>Inquire Price on WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 4: Tamarind With Seed -->
+        <div class="product-card bg-white rounded-xl border border-stone-200 overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden bg-stone-100 relative">
+              <img src="assets/prod_tamarind_with_seed.jpg" alt="Tamarind with Seed" class="w-full h-full object-cover">
+              <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-stone-700 text-white text-[11px] font-semibold">
+                Farm Direct
+              </div>
+            </div>
+            <div class="p-5 space-y-3">
+              <div>
+                <h3 class="text-lg font-bold text-stone-900">TAMARIND WITH SEED</h3>
+                <p class="text-xs text-stone-500 font-medium">Shell Removed Tamarind Fruit with Seed</p>
+              </div>
+
+              <!-- Available Sizes Badge -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-2.5">
+                <span class="text-[11px] text-stone-500 block uppercase font-bold">Packaging:</span>
+                <span class="text-sm font-bold text-[#c4681f]">Bulk Sacks / Gunny Bags</span>
+              </div>
+
+              <!-- Bullet Points -->
+              <ul class="text-xs text-stone-600 space-y-1.5 pt-1">
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Shell removed dried tamarind pods with seed
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Direct harvest from Maharashtra orchards
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Supplied for wholesale mandis & peeling mills
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-5 pt-0">
+            <button onclick="orderProductWhatsApp('Tamarind with Seed', 'Bulk Sacks')" 
+                    class="w-full py-2.5 rounded-lg bg-[#4a2211] hover:bg-[#331508] text-white text-xs font-bold transition flex items-center justify-center gap-2">
+              <svg class="w-3.5 h-3.5 fill-current text-amber-400" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.77.818 2.796.818 3.182 0 5.768-2.587 5.768-5.766.001-3.181-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.745 0-3.38-.45-4.81-1.238l-5.19 1.362 1.387-5.067c-.89-1.503-1.387-3.238-1.387-5.057 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/></svg>
+              <span>Inquire Price on WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 5: Tamarind Seeds (TSP) -->
+        <div class="product-card bg-white rounded-xl border border-stone-200 overflow-hidden flex flex-col justify-between md:col-span-2 lg:col-span-1">
+          <div>
+            <div class="h-48 overflow-hidden bg-stone-100 relative">
+              <img src="assets/tamarind_seeds_tsp.jpg" alt="Tamarind Seeds TSP" class="w-full h-full object-cover">
+              <div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-emerald-700 text-white text-[11px] font-semibold">
+                Export Grade
+              </div>
+            </div>
+            <div class="p-5 space-y-3">
+              <div>
+                <h3 class="text-lg font-bold text-stone-900">TAMARIND SEEDS (TSP)</h3>
+                <p class="text-xs text-stone-500 font-medium">Export for Pharma, Paper & Confectionery</p>
+              </div>
+
+              <!-- Available Sizes Badge -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-2.5">
+                <span class="text-[11px] text-stone-500 block uppercase font-bold">Grade & Packing:</span>
+                <span class="text-sm font-bold text-[#c4681f]">50kg Bags / 1 MT Jumbo Bags</span>
+              </div>
+
+              <!-- Bullet Points -->
+              <ul class="text-xs text-stone-600 space-y-1.5 pt-1">
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Clean, graded high-viscosity tamarind seeds
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Used for pharmaceutical excipients & drug binders
+                </li>
+                <li class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c4681f]"></span>
+                  Textile sizing, paper mills & confectionery
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-5 pt-0">
+            <button onclick="orderProductWhatsApp('Tamarind Seeds (TSP)', '50kg / Jumbo Bags')" 
+                    class="w-full py-2.5 rounded-lg bg-[#4a2211] hover:bg-[#331508] text-white text-xs font-bold transition flex items-center justify-center gap-2">
+              <svg class="w-3.5 h-3.5 fill-current text-amber-400" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.77.818 2.796.818 3.182 0 5.768-2.587 5.768-5.766.001-3.181-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.745 0-3.38-.45-4.81-1.238l-5.19 1.362 1.387-5.067c-.89-1.503-1.387-3.238-1.387-5.057 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/></svg>
+              <span>Inquire Price on WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. Process Section -->
+  <section id="process" class="py-16 md:py-20 bg-stone-50 border-y border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-xl mx-auto mb-12 space-y-2">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#c4681f]">Quality Steps</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#4a2211]">HOW WE PROCESS</h2>
+        <p class="text-stone-600 text-xs sm:text-sm">Clean, hygienic, step-by-step value addition.</p>
+      </div>
+
+      <!-- 4-Step Process Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Step 1 -->
+        <div class="bg-white p-6 rounded-xl border border-stone-200 text-center space-y-3">
+          <div class="w-10 h-10 rounded-full bg-amber-100 text-[#c4681f] font-black text-sm flex items-center justify-center mx-auto">
+            1
+          </div>
+          <h3 class="font-bold text-sm text-stone-900">Maharashtra Sourcing</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Raw dried tamarind selected from top agricultural harvest belts in Maharashtra.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-white p-6 rounded-xl border border-stone-200 text-center space-y-3">
+          <div class="w-10 h-10 rounded-full bg-amber-100 text-[#c4681f] font-black text-sm flex items-center justify-center mx-auto">
+            2
+          </div>
+          <h3 class="font-bold text-sm text-stone-900">Shelling & Curing</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Outer shell removal, sun-curing, and husk cleaning at Dharmapuri unit.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-white p-6 rounded-xl border border-stone-200 text-center space-y-3">
+          <div class="w-10 h-10 rounded-full bg-amber-100 text-[#c4681f] font-black text-sm flex items-center justify-center mx-auto">
+            3
+          </div>
+          <h3 class="font-bold text-sm text-stone-900">Deseeding & Defibering</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Meticulous removal of seeds, fibers, and veins to ensure pure seedless pulp.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="bg-white p-6 rounded-xl border border-stone-200 text-center space-y-3">
+          <div class="w-10 h-10 rounded-full bg-amber-100 text-[#c4681f] font-black text-sm flex items-center justify-center mx-auto">
+            4
+          </div>
+          <h3 class="font-bold text-sm text-stone-900">Pressing & Packaging</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Pressed into cakes (250g/500g/1kg), round balls, or wholesale 50kg PP bags.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. Key Highlights / Why Choose Us -->
+  <section id="highlights" class="py-16 md:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-xl mx-auto mb-12 space-y-2">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#c4681f]">Core Advantages</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#4a2211]">WHY MUGIL TAMARIND?</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-5 rounded-xl border border-stone-200 bg-stone-50/50 space-y-2">
+          <div class="text-2xl">⚡</div>
+          <h3 class="font-bold text-sm text-stone-900">1 kg to Metric Tons</h3>
+          <p class="text-xs text-stone-600">Supplying small retail batches up to full container-load wholesale shipments.</p>
+        </div>
+
+        <div class="p-5 rounded-xl border border-stone-200 bg-stone-50/50 space-y-2">
+          <div class="text-2xl">🌿</div>
+          <h3 class="font-bold text-sm text-stone-900">100% Pure & Natural</h3>
+          <p class="text-xs text-stone-600">Zero artificial colors, zero synthetic moisture weight, and clean hygienic processing.</p>
+        </div>
+
+        <div class="p-5 rounded-xl border border-stone-200 bg-stone-50/50 space-y-2">
+          <div class="text-2xl">🏭</div>
+          <h3 class="font-bold text-sm text-stone-900">Dharmapuri Facility</h3>
+          <p class="text-xs text-stone-600">Direct value-added manufacturing with 22–24 MT monthly supply capacity.</p>
+        </div>
+
+        <div class="p-5 rounded-xl border border-stone-200 bg-stone-50/50 space-y-2">
+          <div class="text-2xl">🚚</div>
+          <h3 class="font-bold text-sm text-stone-900">Pan-India & Export</h3>
+          <p class="text-xs text-stone-600">Fast road dispatch across India, and direct port corridors to Chennai & Tuticorin.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. Contact & Inquiries Section -->
+  <section id="contact" class="py-16 md:py-20 bg-stone-50 border-t border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Contact Details -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-[#c4681f]">Direct Contact</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-[#4a2211]">GET IN TOUCH</h2>
+            <p class="text-stone-600 text-xs sm:text-sm mt-1">Contact for prices, wholesale inquiries & sample requests.</p>
+          </div>
+
+          <!-- Cards with Exact Address and Phone -->
+          <div class="space-y-3 text-xs">
+            
+            <div class="p-4 bg-white rounded-xl border border-stone-200 space-y-1">
+              <span class="text-stone-400 font-bold uppercase text-[10px]">Processing & Office Address</span>
+              <p class="font-bold text-stone-900 text-sm">Mugil Tamarind (முகில் புளி)</p>
+              <p class="text-stone-700 leading-relaxed">
+                4/959 Teachers Colony, Vennampatti Road,<br>
+                Dharmapuri - 636701, Tamil Nadu, India
+              </p>
+            </div>
+
+            <div class="p-4 bg-white rounded-xl border border-stone-200 space-y-1">
+              <span class="text-stone-400 font-bold uppercase text-[10px]">Phone & WhatsApp</span>
+              <p class="text-sm font-bold text-stone-900">
+                <a href="tel:+919442177026" class="hover:text-[#c4681f]">+91 94421 77026</a>
+              </p>
+              <a href="https://wa.me/919442177026" target="_blank" class="text-emerald-600 font-semibold hover:underline block pt-0.5">
+                Click here to chat on WhatsApp
+              </a>
+            </div>
+
+            <div class="p-4 bg-white rounded-xl border border-stone-200 space-y-1">
+              <span class="text-stone-400 font-bold uppercase text-[10px]">Social Channels</span>
+              <div class="flex flex-wrap gap-2 pt-1 text-xs">
+                <a href="https://www.instagram.com/mugiltamarind/" target="_blank" class="px-2.5 py-1 rounded bg-stone-100 text-stone-800 hover:bg-stone-200 font-medium">
+                  Instagram @MugilTamarind
+                </a>
+                <a href="https://www.linkedin.com/in/mugil-tamarind-2598383b4/" target="_blank" class="px-2.5 py-1 rounded bg-stone-100 text-stone-800 hover:bg-stone-200 font-medium">
+                  LinkedIn
+                </a>
+                <a href="https://www.facebook.com/61588489631890/videos/" target="_blank" class="px-2.5 py-1 rounded bg-stone-100 text-stone-800 hover:bg-stone-200 font-medium">
+                  Facebook Videos
+                </a>
+                <a href="https://youtube.com/@MugilTamarind" target="_blank" class="px-2.5 py-1 rounded bg-stone-100 text-stone-800 hover:bg-stone-200 font-medium">
+                  YouTube
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Quick Inquiry Form -->
+        <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-sm">
+          <h3 class="text-lg font-bold text-stone-900 mb-1">Quick Price & Order Inquiry</h3>
+          <p class="text-xs text-stone-500 mb-5">Send your requirement. We reply promptly on WhatsApp.</p>
+
+          <form id="contact-form" class="space-y-4 text-xs">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block font-semibold text-stone-700 mb-1">Your Name *</label>
+                <input type="text" id="form-name" required placeholder="Full Name" class="w-full bg-stone-50 border border-stone-200 rounded-lg px-3.5 py-2.5 text-xs text-stone-900 focus:outline-none focus:border-[#c4681f]">
+              </div>
+              <div>
+                <label class="block font-semibold text-stone-700 mb-1">Phone / WhatsApp Number *</label>
+                <input type="tel" id="form-phone" required placeholder="+91 ..." class="w-full bg-stone-50 border border-stone-200 rounded-lg px-3.5 py-2.5 text-xs text-stone-900 focus:outline-none focus:border-[#c4681f]">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block font-semibold text-stone-700 mb-1">Select Product</label>
+                <select id="form-product" class="w-full bg-stone-50 border border-stone-200 rounded-lg px-3 py-2.5 text-xs text-stone-900 focus:outline-none focus:border-[#c4681f]">
+                  <option value="Seedless Tamarind Cake (250g/500g/1kg)">Seedless Tamarind Cake (Bars)</option>
+                  <option value="Seedless Round Tamarind (Dosai Puli)">Seedless Round Tamarind</option>
+                  <option value="Seedless Tamarind in PP Bag (Wholesale)">Seedless Tamarind in PP Bag</option>
+                  <option value="Tamarind with Seed">Tamarind with Seed</option>
+                  <option value="Tamarind Seeds (TSP)">Tamarind Seeds (TSP Grade)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block font-semibold text-stone-700 mb-1">Quantity Required</label>
+                <input type="text" id="form-qty" placeholder="e.g. 50 kg / 1 Ton / 20 Tons" class="w-full bg-stone-50 border border-stone-200 rounded-lg px-3.5 py-2.5 text-xs text-stone-900 focus:outline-none focus:border-[#c4681f]">
+              </div>
+            </div>
+
+            <div>
+              <label class="block font-semibold text-stone-700 mb-1">Notes / Destination City</label>
+              <textarea id="form-message" rows="3" placeholder="Enter delivery location or specific packaging requirement..." class="w-full bg-stone-50 border border-stone-200 rounded-lg px-3.5 py-2 text-xs text-stone-900 focus:outline-none focus:border-[#c4681f]"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3 rounded-lg bg-[#4a2211] hover:bg-[#331508] text-white font-bold text-xs uppercase tracking-wider shadow transition">
+              Submit & Send on WhatsApp
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Clean Footer -->
+  <footer class="bg-white border-t border-stone-200 py-10 text-stone-600 text-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        
+        <div class="flex items-center space-x-3">
+          <img src="assets/logo_tight.jpg" alt="Mugil Tamarind" class="h-8 w-auto">
+          <div>
+            <div class="font-bold text-stone-900">Mugil Tamarind</div>
+            <div class="text-[11px] text-stone-400">4/959 Teachers Colony, Vennampatti Road, Dharmapuri - 636701</div>
+          </div>
+        </div>
+
+        <div class="text-center sm:text-right text-[11px] text-stone-500">
+          Mobile: +91 94421 77026 • Instagram @MugilTamarind<br>
+          © 2026 Mugil Tamarind. All Rights Reserved.
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Sticky WhatsApp CTA -->
+  <aside aria-label="Quick contact" class="fixed bottom-6 right-6 z-40">
+    <a href="https://wa.me/919442177026?text=Hi%20Elavarasan%2C%20I%20am%20interested%20in%20Mugil%20Tamarind%20products." 
+       target="_blank" 
+       rel="noopener"
+       class="flex items-center space-x-2 px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-xl transition transform hover:scale-105 border-2 border-white">
+      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.77.818 2.796.818 3.182 0 5.768-2.587 5.768-5.766.001-3.181-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.745 0-3.38-.45-4.81-1.238l-5.19 1.362 1.387-5.067c-.89-1.503-1.387-3.238-1.387-5.057 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/></svg>
+      <span class="hidden sm:inline">WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
